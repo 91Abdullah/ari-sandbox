@@ -18,3 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::middleware('auth:api')->post('/originate', 'CallController@originate');
+
+Route::get('/originate', 'CallController@originate');
